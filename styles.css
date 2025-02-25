@@ -1,0 +1,384 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e9e9ed;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 900px;
+    width: 90%;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+.header .text {
+    text-align: left;
+}
+.header h1 {
+    color: #054287;
+    margin: 0 0 15px 0;
+}
+.header p {
+    margin: 5px 0;
+}
+.profile-img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.icon-link {
+    margin-left: 8px;
+    color: #054287;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.icon-link:hover {
+    color: #007bff;
+}
+
+    
+h2 {
+    color: #054287;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+}
+
+h3 {
+    color: #054287; /* Синий цвет */
+}
+
+.section {
+    margin-bottom: 25px;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 8px;
+    text-align: left;
+}
+li strong {
+    display: block;
+    margin: 15px 0;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 10px;
+    }
+    
+}
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.skills-grid div {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-grid h3 {
+    color: #054287;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold; /* Заголовки остаются жирными */
+    text-align: center;
+}
+
+.skills-grid ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-grid li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    font-weight: normal; /* Убираем жирность у пунктов списка */
+}
+
+.skills-grid li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #054287;
+}
+
+/* Для адаптации на мобильных */
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.experience-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 15px 0;
+}
+
+.experience-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.experience-item:hover {
+    transform: translateY(-5px);
+}
+
+.experience-item h3 {
+    color: #054287;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-item .location {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.experience-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item li {
+    padding-left: 20px;
+    position: relative;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+.experience-item li::before {
+    content: "✔";
+    position: absolute;
+    left: 0;
+    color: #054287;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    background: #eff1f4;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.contact-item {
+    flex: 1 1 45%;
+    padding: 3px 8px; /* Уменьшены отступы */
+    background: white;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    line-height: 1.1; /* Чуть плотнее текст */
+}
+
+.contact-item strong {
+    color: #054287;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact-item a {
+    color: #003366;
+    text-decoration: none;
+}
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .contact-item {
+        flex: 1 1 100%;
+    }
+}
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+.icon-link {
+    display: inline-block;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 колонки в ряд */
+    gap: 15px;
+}
+
+@media (min-width: 1024px) {
+    .cert-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 блока в один ряд на больших экранах */
+    }
+}
+
+.cert-grid h3 {
+    color: #054287;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.cert-grid ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.cert-grid li {
+    background: #fff;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 5px;
+}
+
+.professional-titles {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 400;
+    color: #054287;
+    margin-bottom: 20px;
+}
+
+
+.hobbies-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.hobby {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.hobby h3 {
+    color: #054287;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hobby p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hobby:hover {
+    background: #e6ecf5;
+    transform: translateY(-5px);
+}
+
+.divider {
+    border: none;
+    height: 1px;
+    background: #054287;
+    margin: 10px auto;
+    width: 100%;
+}
+
+.footer {
+    text-align: left;
+    padding: 20px;
+    font-size: 14px;
+    color: #666;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #054287;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+.download-btn:hover {
+    background-color: #032a5e;
+}
+
+
+#professional-highlights {
+    background: #f8f9fa;  /* Тот же фон, что и у Professional Summary */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+#professional-highlights h2 {
+    color: #054287;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ddd;  /* Тот же стиль подчеркивания */
+    padding-bottom: 5px;
+}
+
+#professional-highlights p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.2;
+}
+
+
+
+.section#education p {
+    line-height: 1.4;
+}

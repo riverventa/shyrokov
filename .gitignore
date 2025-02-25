@@ -1,0 +1,45 @@
+# Игнорируем системные файлы Windows
+Thumbs.db
+desktop.ini
+
+# Игнорируем скрытые папки и файлы конфигурации
+.DS_Store
+.vscode/
+.idea/
+*.log
+
+# Игнорируем временные файлы редакторов
+*.bak
+*.swp
+*.swo
+*.swn
+*.tmp
+~$*
+
+# Игнорируем личные данные и конфигурации
+*.env
+*.credentials
+*.config
+
+# Игнорируем файлы бэкапов и архивов
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# Игнорируем ненужные директории Windows
+Application Data/
+Cookies/
+Local Settings/
+NetHood/
+PrintHood/
+Recent/
+SendTo/
+главное меню/
+Мои документы/
+Шаблоны/
+
+# Игнорируем файлы с учетными данными (если есть)
+email pass.txt
+pb_2605318655.jks
