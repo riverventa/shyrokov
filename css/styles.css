@@ -13,7 +13,7 @@ Version: 1.0
   --bodyColor: #F3F3F3;
 
   /* primary brand color */
-  --primary-color: #8067FF;
+  --primary-color: #1f04a4;
 
   /* white color */
   --white: #050505;
@@ -349,29 +349,27 @@ img {
 
 /* end global classes */
 
-/* ==== start  preloader style  ===== */
+
+/* ==== start preloader style ===== */
 
 .pace {
   pointer-events: none;
   user-select: none;
   z-index: 9999;
   position: fixed;
-  margin: auto;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 400px;
-  border: 0px;
-  height: 1.5px;
+  top: 50%;  /* Центрируем по вертикали */
+  left: 50%; /* Центрируем по горизонтали */
+  transform: translate(-50%, -50%); /* Сдвигаем на половину ширины и высоты */
+  width: 400px; /* Ширина полоски */
+  height: 3px; /* Высота полоски */
   overflow: hidden;
   background: #1d1d1d;
 }
 
+
 .pace .pace-progress {
   box-sizing: border-box;
   transform: translate3d(0, 0, 0);
-  max-width: 400px;
   position: fixed;
   z-index: 2000;
   display: block;
@@ -395,6 +393,13 @@ img {
   overflow: hidden;
   position: fixed;
   transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 1;
+  transition: opacity 1s ease-out; /* Плавное исчезновение */
+}
+
+#preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .p {
@@ -405,6 +410,7 @@ img {
   font-size: 32px;
   color: #f1f1f1;
 }
+
 
 /* ==== end  preloader style  ===== */
 
