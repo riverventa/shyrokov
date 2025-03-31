@@ -574,6 +574,51 @@ img {
 
 /*============== End About section ==========*/
 
+
+/*============== Start Experience section ==========*/
+
+.experience {
+  position: relative;
+}
+
+.experience .blury-1 {
+  top: -100px;
+  right: -400px;
+}
+
+.experience .blury-2 {
+  bottom: -100px;
+  left: -400px;
+}
+
+.experience-grid {
+  position: relative;
+  display: grid;
+  gap: 20px;
+}
+
+.experience-item {
+  border: 1px solid black; /* Тонкая черная линия */
+  padding: 20px;
+}
+
+
+@media (min-width: 768px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  }
+}
+
+@media (max-width: 767px) {
+  .experience-grid {
+    grid-template-columns: 1fr; /* Одна колонка */
+  }
+}
+
+/*============== End Experience section ==========*/
+
+
+
 /*============== Start Services section ==========*/
 
 .services .blury-1 {
@@ -691,3 +736,36 @@ img {
 }
 
 /*============== End Footer section ==========*/
+
+
+
+/*====== Стили для уменьшения размера изображения hero======*/
+
+/* Родительский элемент, который использует Flexbox для центрирования */
+.col-lg-4 {
+  display: flex;  /* Включаем flexbox */
+  justify-content: center;  /* Центрируем по горизонтали */
+  align-items: center;  /* Центрируем по вертикали */
+}
+
+/* Уменьшаем изображение и отодвигаем его вправо на десктопе */
+.col-lg-4 img {
+  width: 75%;  /* Уменьшаем изображение до 75% от исходного размера */
+  height: auto;  /* Сохраняем пропорции изображения */
+}
+
+/* Медиазапрос для десктопа (с шириной экрана 992px и выше) */
+@media (min-width: 992px) {
+  .col-lg-4 img {
+    margin-left: 50px;  /* Отодвигаем изображение вправо на 30px только на десктопе */
+    margin-top: -110px;  /* Поднимаем изображение на 50px только на десктопах */
+  }
+}
+
+/* Мобильная версия: изображение по центру, без отступов */
+@media (max-width: 991px) {
+  .col-lg-4 img {
+    margin-left: 0;  /* Убираем отступы на мобильных */
+    margin-top: 0;  /* Убираем отступ сверху на мобильных */
+  }
+}
