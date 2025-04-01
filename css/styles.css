@@ -584,7 +584,40 @@ img {
   left: -800px;
 }
 
-/*============== End About section ==========*/
+/* Иконки  *//* Иконки  *//* Иконки  *//* Иконки  */
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #054287; /* Тонкая линия */
+  border-radius: 0; /* Убрали скругление */
+  box-shadow: none; /* Убрали тень */
+  background: transparent; /* Убрали фон */
+  transition: transform 0.3s ease-in-out;
+}
+
+.stat-item:hover {
+  transform: scale(1.05);
+}
+
+.navy-icon {
+  font-size: 40px;
+  color: #054287;
+  margin-bottom: 10px;
+}
+
+.heading-1 {
+  font-size: 2rem;
+  color: #054287;
+  margin: 10px 0;
+}
+
+.primary-text {
+  font-weight: bold;
+  color: #054287;
+}
+
 
 
 /*============== Start Experience section ==========*/
