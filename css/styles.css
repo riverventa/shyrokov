@@ -1,6 +1,6 @@
 /*===================================================
-Project: mixfolio | personal portfolio HTML website template  
-Auther: ERRAMIX
+personal portfolio HTML website 
+
 Version: 1.0
 ====================================================*/
 
@@ -29,6 +29,7 @@ Version: 1.0
 
   /* border radius */
   --border-radius: 0;
+
 }
 
 h3 {
@@ -613,6 +614,16 @@ img {
   padding: 20px;
 }
 
+.experience-item ul {
+  list-style-type: disc; /* Маркеры (точки) */
+  padding-left: 20px; /* Отступ слева */
+}
+
+.experience-item ul li {
+  font-size: 1rem;
+  margin-bottom: 8px; /* Отступ между элементами списка */
+  color: #555; /* Цвет текста для списка */
+}
 
 @media (min-width: 768px) {
   .experience-grid {
@@ -628,6 +639,7 @@ img {
 
 /*============== End Experience section ==========*/
 
+
 /*============== Education section ==========*/
 
 #education {
@@ -636,6 +648,137 @@ img {
 
 /*============== End Education section ==========*/
 
+
+
+/* ============== Start Skills section ============== */
+
+
+.skills {
+  position: relative;
+}
+
+.skills .blury-1 {
+  top: -100px;
+  right: -400px;
+}
+
+.skills .blury-2 {
+  bottom: -100px;
+  left: -400px;
+}
+
+.skills .organise {
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+.skills-grid {
+  position: relative;
+  display: grid;
+  gap: 20px;
+}
+
+.skills-grid > div {
+  border: 1px solid black; /* Тонкая черная линия */
+  padding: 20px;
+}
+
+.skills-grid h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #3d0083;
+}
+
+.skills-grid ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.skills-grid ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+
+
+@media (min-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-grid {
+    grid-template-columns: 1fr; /* Одна колонка */
+  }
+}
+
+/* ============== End Skills section ============== */
+/* ============== Start Licenses & Certifications section ============== */
+
+.certifications {
+  position: relative;
+}
+
+.certifications .blury-1 {
+  top: -100px;
+  right: -400px;
+}
+
+.certifications .blury-2 {
+  bottom: -100px;
+  left: -400px;
+}
+
+.certifications .organise {
+  position: absolute;
+  top: 0;
+  right: -100px;
+}
+
+.cert-grid {
+  position: relative;
+  display: grid;
+  gap: 20px;
+}
+
+.cert-grid > div {
+  border: 1px solid black; /* Тонкая черная линия */
+  padding: 20px;
+}
+
+.cert-grid h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #054287; /* Темно-синий цвет */
+}
+
+.cert-grid ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.cert-grid ul li {
+  font-size: 1rem;
+  margin-bottom: 8px;
+  color: #555;
+}
+
+@media (min-width: 768px) {
+  .cert-grid {
+    grid-template-columns: repeat(2, 1fr); /* Две колонки */
+  }
+}
+
+@media (max-width: 767px) {
+  .cert-grid {
+    grid-template-columns: 1fr; /* Одна колонка */
+  }
+}
+
+/* ============== End Licenses & Certifications section ============== */
 
 /*============== Start Services section ==========*/
 
