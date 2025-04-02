@@ -13,7 +13,7 @@ Version: 1.0
   --bodyColor: #F3F3F3;
 
   /* primary brand color */
-  --primary-color: #1f04a4;
+  --primary-color: rgb(10, 10, 146);
 
   /* white color */
   --white: #050505;
@@ -22,7 +22,7 @@ Version: 1.0
   --grey: #5C5C5C;
 
   /* dark grey color */
-  --dark-grey: #434E49;
+  --dark-grey: #3c413f;
 
   /* box color */
   --box-color: #f0f0f0;
@@ -33,7 +33,7 @@ Version: 1.0
 }
 
 h3 {
-  color: #00008B; /* Navy Blue */
+  color: #0303a4; /* Navy Blue */
 }
 
 
@@ -107,7 +107,7 @@ html {
 }
 
 .body-1 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 30px;
   color: var(--grey);
@@ -141,13 +141,6 @@ html {
   .heading-2 {
     font-size: 20px;
   }
-
-  @media (max-width: 768px) {
-    .heading-2 {
-      font-size: 28px; /* Увеличь по необходимости */
-    }
-  }
-  
 
   .heading-3 {
     font-size: 16px;
@@ -213,6 +206,19 @@ html {
   }
 }
 
+@media (max-width: 768px) {
+  .heading-2 {
+    font-size: 28px;
+  }
+
+  /* Исправление для FAQ */
+  .faq .container {
+    width: 90% !important;
+    margin: 0 auto !important;
+  }
+}
+
+
 a {
   text-decoration: none;
   text-transform: capitalize;
@@ -277,7 +283,7 @@ p {
 
 
 .section {
-  padding-block: 6rem;
+  padding-block: 2rem;
 }
 
 .blury {
@@ -729,7 +735,7 @@ img {
 .skills-grid h3 {
   font-size: 1.5rem;
   margin-bottom: 10px;
-  color: #3d0083;
+  color: navy;
 }
 
 .skills-grid ul {
@@ -758,6 +764,7 @@ img {
 }
 
 /* ============== End Skills section ============== */
+
 /* ============== Start Licenses & Certifications section ============== */
 
 .certifications {
@@ -840,38 +847,6 @@ img {
 
 /*============== End Services section ==========*/
 
-/*============== Start portfolio section ==========*/
-
-.portfolio .box-tag {
-  background-color: #d3d3da;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.portfolio .box-tag h4 {
-  color: var(--grey);
-  font-size: 18px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-}
-
-.portfolio .container>* {
-  position: relative;
-}
-
-.portfolio .blury-portfolio {
-  top: 0;
-  right: -600px;
-}
-
-.portfolio .portfolio-organize {
-  top: 100px;
-  right: -200px;
-}
-
-/*============== End portfolio section ==========*/
 
 
 /*============== start FAQ section ==========*/
@@ -902,28 +877,10 @@ img {
   transform: rotate(180deg);
 }
 
-@media (max-width: 768px) {
-  .faq .container {
-    width: 100% !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  .faq .d-flex {
-    flex-direction: column !important; /* Для правильного отображения на мобильных устройствах */
-  }
-
-  .faq .bordered-box {
-    width: 100% !important; /* Обеспечивает использование всей ширины для каждого элемента */
-  }
-
-  .faq .btn {
-    width: 100% !important; /* Делаем кнопку на всю ширину */
-  }
-}
 
 
 /*============== End FAQ section ==========*/
+
 
 /*============== Start contact section ==========*/
 .contact .blury-1 {
@@ -974,7 +931,7 @@ img {
 
 /* Уменьшаем изображение и отодвигаем его вправо на десктопе */
 .col-lg-4 img {
-  width: 75%;  /* Уменьшаем изображение до 75% от исходного размера */
+  width: 70%;  /* Уменьшаем изображение до 75% от исходного размера */
   height: auto;  /* Сохраняем пропорции изображения */
 }
 
