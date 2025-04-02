@@ -267,6 +267,15 @@ p {
   color: var(--grey);
 }
 
+@media (max-width: 768px) {
+  p {
+    font-size: 18px !important; /* Принудительно увеличиваем размер */
+    color: #222 !important; /* Принудительно делаем текст темнее */
+  }
+}
+
+
+
 .section {
   padding-block: 6rem;
 }
@@ -609,7 +618,7 @@ img {
 
 .heading-1 {
   font-size: 2rem;
-  color: #054287;
+  color: black;
   margin: 10px 0;
 }
 
@@ -961,5 +970,12 @@ img {
   .col-lg-4 img {
     margin-left: 0;  /* Убираем отступы на мобильных */
     margin-top: 0;  /* Убираем отступ сверху на мобильных */
+  }
+}
+
+/* убрали границы блоков (окантовку) на мобильных */
+@media (max-width: 768px) {
+  * {
+    border: none !important;
   }
 }
