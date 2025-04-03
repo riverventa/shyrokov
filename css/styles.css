@@ -1033,3 +1033,10 @@ img {
 
 /* END Стили для таблицы Sea Service */
 
+.sea-service-description,
+h1.heading-1,
+.body-2 {
+  max-width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
