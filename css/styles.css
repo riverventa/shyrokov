@@ -166,7 +166,7 @@ html {
   }
 
   .gap-32 {
-    gap: 16px;
+    gap: 1px;
   }
 
   .padding-32 {
@@ -285,6 +285,14 @@ p {
 .section {
   padding-block: 2rem;
 }
+
+/* Медиа-запрос для мобильных устройств */
+@media (max-width: 768px) {
+  .section {
+    padding-block: 0,1rem;  /* Уменьшаем отступы для мобильных устройств */
+  }
+}
+
 
 .blury {
   width: 1200px;
@@ -829,24 +837,6 @@ img {
 
 /* ============== End Licenses & Certifications section ============== */
 
-/*============== Start Services section ==========*/
-
-.services .blury-1 {
-  top: -150px;
-  right: -500px;
-}
-
-.services .container>* {
-  position: relative;
-}
-
-.services .blury-2 {
-  top: 100px;
-  left: -500px;
-}
-
-/*============== End Services section ==========*/
-
 
 
 /*============== start FAQ section ==========*/
@@ -876,8 +866,6 @@ img {
 .rotate-icon.rotated {
   transform: rotate(180deg);
 }
-
-
 
 /*============== End FAQ section ==========*/
 
@@ -981,4 +969,8 @@ img {
   background-color: #b1bfce;
 }
 
+/* Это уберёт боковые отступы у .container, и ширина секций больше не будет сжиматься*/
+.container {
+  --bs-gutter-x: 0.5rem; /* Или 8px */
+}
 
