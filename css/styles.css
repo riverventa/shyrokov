@@ -213,7 +213,7 @@ html {
 
   /* Исправление для FAQ */
   .faq .container {
-    width: 90% !important;
+    width: 100% !important;
     margin: 0 auto !important;
   }
 }
