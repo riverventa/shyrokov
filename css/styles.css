@@ -983,11 +983,16 @@ img {
 }
 
 
-/* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
-/* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
+/* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
+/* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
+
+.sea-service {
+  margin-left: -10px; /* Сдвигаем весь блок влево */
+}
 
 .sea-service-table {
-  width: 100%;
+  width: 85%; /* Делаем таблицу шириной 85% */
+  margin: 0 auto; /* Центрируем таблицу на странице */
   border-collapse: collapse;
   margin-top: 2rem;
 }
@@ -1022,8 +1027,9 @@ img {
   }
 
   .sea-service-table td {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
-/* END Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
+/* END Стили для таблицы Sea Service */
+

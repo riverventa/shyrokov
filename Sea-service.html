@@ -1,101 +1,121 @@
-<!DOCTYPE html>
-<html lang="en">
+      <!DOCTYPE html>
+      <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Alexander Shyrokov | personal portfolio">
-  <!-- fav icon -->
-  <link rel="icon" href="images/favicon.ico">
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Alexander Shyrokov | personal portfolio">
+        <!-- fav icon -->
+        <link rel="icon" href="images/favicon.ico">
 
-  <!-- bootstarp css file -->
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- bootstarp css file -->
+        <link rel="stylesheet" href="css/bootstrap.min.css">
 
-  <!-- fontawesome icons -->
-  <link rel="stylesheet" href="css/all.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <!-- fontawesome icons -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  <!-- main css file -->
-  <link rel="stylesheet" href="css/styles.css">
-  <title> Alexander Shyrokov | Personal Portfolio & CV</title>
-</head>
+        <!-- main css file -->
+        <link rel="stylesheet" href="css/styles.css">
+        <title> Alexander Shyrokov | Personal Portfolio & CV</title>
 
-<body class="body">
+        <script src="js/pace.js"></script>
 
-    <!-- start preLoader -->
-  <!--  <div id="preloader">
-      <div class="p">LOADING</div>
-    </div>-->
-    <!-- end preLoader -->
+      </head>
 
-  <!-- start scroll to top button -->
-  <div id="progress">
-    <span id="progress-value"><i class="bi bi-arrow-up-short"></i></span>
-  </div>
-  <!-- end scroll to top button -->
+      <body class="body">
 
-  <!-- ======= start Header ======= -->
-  <header class="header">
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container">
-        <a href="#">
-          <h2 class="heading-2 primary-text">Capt. Oleksandr Shyrokov</h2>
-        </a>
-        
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-
-        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-          <ul class="navbar-nav ms-auto" id="navbar">
-
-             <li class="nav-item">
-               <a class="nav-link" aria-current="page" href="index.html">Home</a>
-            </li>
-
-           
-            <li class="nav-item">
-              <a class="nav-link" href="sea-service.html">Sea Service</a> <!-- Новый пункт меню -->
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/cv.pdf" target="_blank">Download CV pdf</a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#contact">Contact us</a>
-            </li>
-            
-            
-
-          </ul>
-          <div class="d-flex gap-2 ms-auto">
-            <a class="btn" href="mailto:riverventar@gmail.com">contact me</a>
+          <!-- start preLoader -->
+        <div id="preloader">
+            <div class="p">LOADING</div>
           </div>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- ======= end Header ======= -->
+          <!-- end preLoader -->
 
-<!-- Контент страницы Sea Service -->
+        <!-- start scroll to top button -->
+        <div id="progress">
+          <span id="progress-value"><i class="bi bi-arrow-up-short"></i></span>
+        </div>
+        <!-- end scroll to top button -->
+
+        <!-- ======= start Header ======= -->
+        <header class="header">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+              <a href="#">
+                <h2 class="heading-2 primary-text">Capt. Oleksandr Shyrokov</h2>
+              </a>
+              
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav ms-auto" id="navbar">
+
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                            
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cv.pdf" target="_blank">Download CV pdf</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html#contact">Contact us</a>
+                  </li>
+                </ul>
+
+                <div class="d-flex gap-2 ms-auto">
+                  <a class="btn" href="mailto:riverventar@gmail.com">contact me</a>
+                </div>
+
+              </div>
+            </div>
+          </nav>
+        </header>
+        
+        <!-- ======= end Header ======= -->
+
+
+<!-- ======= Контент страницы Sea Service ======= -->
+
 <section class="sea-service" id="service">
   <img class="shape organise hero-organise" src="images/shapes/ooorganize.svg" alt="shape">
+  
   <div class="container">
     <div class="row align-items-center justify-content-center g-4">
-      <div class="col-lg-8 col-12">
+      <!-- Колонка для контента, которая будет иметь адаптивную ширину -->
+      <div class="col-lg-12 col-md-12 col-12">
         <div class="d-flex flex-column gap-16 position-relative">
           
-          <div class="d-flex flex-column">
+          <!-- Заголовок и текстовое описание -->
+          <div class="sea-service-description" style="margin-top: 40px;">
             <p class="pretitle">Professional Summary</p>
-            <h1 class="heading-1"><span class="primary-text">sea</span> service</h1>
+          </div>
+          
+
+            <h1 class="heading-1" style="margin-top: 10px; margin-bottom: 20px;">
+              <span class="primary-text">Sea</span> Service
+            </h1>
+            
+            <p class="body-2" style="text-align: left; margin-top: 40px; margin-bottom: 40px;">
+              Welcome to our Sea Service page. This section highlights my personal sea service 
+              experience, showcasing the vessels I've worked on and the knowledge I gained over 
+              the years. Below is a detailed table of the vessels, their flags, types, and the 
+              companies I worked with, along with the dates of service. This data reflects my
+              hands-on experience on various ships, demonstrating my operational history in 
+              different regions and industries.
+            </p>
           </div>
 
-          <!-- Таблица Sea Service -->
-          <table class="sea-service-table">
-            <thead>
-              <tr>
+         <!-- Таблица Sea Service -->
+      <div class="table-responsive">
+        <table class="sea-service-table">
+          <thead>
+
+               <tr>
                   <th>From</th>
                   <th>To</th>
                   <th>Vessel</th>
@@ -113,7 +133,7 @@
                   <td>Michel Delmas</td>
                   <td>Panama</td>
                   <td>27000</td>
-                  <td>Container Carrier</td>
+                  <td>ConBulk</td>
                   <td>Ch.Off</td>
                   <td>Enterprises Sh. Co.</td>
                 </tr>
@@ -183,7 +203,7 @@
                   <td>Blandine Delmas</td>
                   <td>Bahamas</td>
                   <td>33520</td>
-                  <td>Container Carrier</td>
+                  <td>ConBulk</td>
                   <td>Master</td>
                   <td>Midocean (IOM) Ltd</td>
                 </tr>
@@ -414,7 +434,96 @@
     </div>
   </section>
 
-  <!-- Подключаем скрипты -->
-  <script src="scripts.js"></script>
+
+                 <!-- ============== Summary of Sea Service Experience ============== -->
+
+        <div class="container mt-5">
+          <h2 class="heading-2">Summary of Sea Service Experience</h2>
+          <p class="body-2" style="text-align: left; margin-top: 40px; margin-bottom: 60px;">
+            Throughout my maritime career, I have served on a variety of vessels, including tankers, 
+            container carriers, and Ro-Ro ships, navigating through diverse international waters. 
+            Each assignment has contributed to my expertise in vessel operations, navigation, and 
+            leadership as a Master. The experience gained on these voyages ensures a deep understanding 
+            of global maritime operations, weather routing, and efficient ship management.
+          </p>
+          
+        </div>
+
+        
+                <!-- ============== Sea Service Stats Section ============== -->
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0">
+            <div class="stat-item">
+              <i class="fas fa-anchor navy-icon"></i>
+              <h1 class="heading-1">30+</h1>
+              <p class="body-1"><span class="primary-text">years</span> at sea</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0">
+            <div class="stat-item">
+              <i class="fas fa-globe navy-icon"></i>
+              <h1 class="heading-1">1,000,000+</h1>
+              <p class="body-1"><span class="primary-text">nautical miles</span> sailed</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0">
+            <div class="stat-item">
+              <i class="fas fa-ship navy-icon"></i>
+              <h1 class="heading-1">15+</h1>
+              <p class="body-1"><span class="primary-text">years</span> as Master</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0">
+            <div class="stat-item">
+              <i class="fas fa-map-marked-alt navy-icon"></i>
+              <h1 class="heading-1">500+</h1>
+              <p class="body-1"><span class="primary-text">voyages</span> completed</p>
+            </div>
+          </div>
+        </div>
+        <!-- ============== END Sea Service Stats Section ============== -->
+
+
+
+        <!-- ============== start footer section ========== -->
+        <section class="footer position-relative pt-4 mt-4">
+          <div class="container">
+            <hr class="p-0 m-0">
+            <div class="row justify-content-center align-items-center  my-4 ">
+
+                          
+              <div class="d-flex justify-content-center gap-16 col-lg-3 col-md-6 col-12 mt-lg-0 mt-2 ">
+
+                <a href="#" class="footer-link">home</a>
+                <a href="#" class="footer-link">services</a>
+                <a class="nav-link" href="index.html#contact">Contact us</a>
+              </div>
+              
+
+              <div class="col-12 text-center mt-2">
+                <a href="cv.pdf" download="My_CV.pdf" class="download-btn">Download CV PDF</a>
+                <span class="mx-2">|</span>
+                <p class="d-inline">&copy; 2024 Oleksandr Shyrokov | Maritime Operations & Fleet Management | ProShipRouting</p>
+              </div>
+            
+            
+            </div>
+          </div>
+        </section>
+        <!-- ============== end footer section ========== -->
+
+
+          <!-- Подключаем скрипты -->
+          <script src="scripts.js"></script>
+
+          <script>
+            window.addEventListener("load", function() {
+                // Прячем прелоадер после полной загрузки
+                document.body.classList.add("loaded");
+            });
+        </script>
+        
+        <script src="js/main.js"></script>
+
 </body>
 </html>
