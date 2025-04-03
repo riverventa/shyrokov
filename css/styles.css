@@ -982,10 +982,3 @@ img {
   --bs-gutter-x: 0.5rem; /* Или 8px */
 }
 
-@media (max-width: 768px) {
-  .section {
-    background: url('/images/shapes/ooorganize.svg') no-repeat center center;
-    background-size: cover;
-    min-height: 100vh; /* Или другое значение, например, 500px */
-  }
-}
