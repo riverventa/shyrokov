@@ -982,3 +982,48 @@ img {
   --bs-gutter-x: 0.5rem; /* Или 8px */
 }
 
+
+/* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
+/* Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
+
+.sea-service-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 2rem;
+}
+
+.sea-service-table th,
+.sea-service-table td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.sea-service-table th {
+  background-color: #f4f4f4;
+}
+
+.sea-service-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.sea-service-table tbody tr:hover {
+  background-color: #eaeaea;
+}
+
+/* Для мобильных устройств */
+@media (max-width: 768px) {
+  .sea-service-table th, .sea-service-table td {
+    padding: 8px;
+  }
+
+  .sea-service-table th {
+    font-size: 14px;
+  }
+
+  .sea-service-table td {
+    font-size: 12px;
+  }
+}
+
+/* END Стили для таблицы Sea Service *//* Стили для таблицы Sea Service */
