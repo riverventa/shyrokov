@@ -3,16 +3,65 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $email = $_POST["email"];
     $message = $_POST["message"];
 
-    // Send email (replace with your own logic)
-    // This is a simple example and does not send actual emails.
-    // Modify this part to send emails using a library or service.
-    $to = "example@example.com";
-    $subject = "Contact Form Submission";
-    $body = "Email: $email\n\nMessage:\n$message";
+    // Параметры SMTP сервера
+    $smtpServer = 'smtp.gmail.com';
+    $smtpPort = 587;
+    $smtpUser = 'riverventa@gmail.com'; // Твой email
+    $smtpPass = 'your-app-password';    // Пароль приложения, если 2FA включен
+    $fromEmail = 'riverventa@gmail.com';
+    $toEmail = 'riverventa@gmail.com'; // Куда отправляем письмо
 
-    // Send the email (you should use a proper email sending method)
-    mail($to, $subject, $body);
+    // Заголовки письма
+    $subject = 'Contact Form Submission';
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= 'From: ' . $fromEmail . "\r\n";
+    $headers .= 'Reply-To: ' . $email . "\r\n";
 
-    echo "Message sent successfully!";
+    // Составление тела письма
+    $body = 'Email: ' . $email . '<br>Message: ' . nl2br($message);
+
+    // Создание соединения с SMTP сервером
+    $socket = fsockopen($smtpServer, $smtpPort, $errno, $errstr, 30);
+
+    if (!$socket) {
+        echo "Ошибка соединения: $errstr ($errno)";
+    } else {
+        // Приветствие сервера
+        fgets($socket, 512);
+        fputs($socket, "EHLO " . $smtpServer . "\r\n");
+        fgets($socket, 512);
+
+        // Установка безопасности (STARTTLS)
+        fputs($socket, "STARTTLS\r\n");
+        fgets($socket, 512);
+
+        // Аутентификация
+        fputs($socket, "AUTH LOGIN\r\n");
+        fgets($socket, 512);
+        fputs($socket, base64_encode($smtpUser) . "\r\n");  // Логин
+        fgets($socket, 512);
+        fputs($socket, base64_encode($smtpPass) . "\r\n");  // Пароль
+        fgets($socket, 512);
+
+        // Отправка письма
+        fputs($socket, "MAIL FROM: <$fromEmail>\r\n");
+        fgets($socket, 512);
+        fputs($socket, "RCPT TO: <$toEmail>\r\n");
+        fgets($socket, 512);
+        fputs($socket, "DATA\r\n");
+        fgets($socket, 512);
+        fputs($socket, $headers . "\r\n" . $body . "\r\n.\r\n");
+        fgets($socket, 512);
+
+        // Закрытие соединения
+        fputs($socket, "QUIT\r\n");
+        fgets($socket, 512);
+
+        fclose($socket);
+
+        echo "Message sent successfully!";
+    }
 }
 ?>
+
