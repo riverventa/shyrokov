@@ -1048,3 +1048,11 @@ h1.heading-1,
   width: 50px; /* Устанавливаем ширину логотипа */
   height: auto; /* Сохраняем пропорции */
 }
+
+
+.blury-1,
+.blury-2 {
+  pointer-events: none;
+  z-index: 0;
+  position: absolute;
+}
