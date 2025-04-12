@@ -32,6 +32,10 @@ Version: 1.0
 
 }
 
+h2 {
+  color: #020286; /* Navy Blue */
+}
+
 h3 {
   color: #0303a4; /* Navy Blue */
 }
@@ -781,6 +785,69 @@ img {
 
 /* ============== End Skills section ============== */
 
+/*============== START SHOWCASE section ==========*/
+
+.showcase .showcase-slider {
+  display: flex;
+  overflow: visible; /* Разрешаем выходить изображениям за пределы блока */
+}
+
+
+.showcase .showcase-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 0px;
+  transition: all 0.3s ease;
+}
+
+
+.showcase .showcase-box {
+  position: relative; /* Обеспечиваем правильное позиционирование для title */
+  margin-top: 20px;
+  margin-right: 10px; /* Отступ между изображениями */
+  flex: 0 0 calc(25% - 10px); /* Для 4 изображений на экране */
+  overflow: visible; /* Разрешаем выходить изображениям за пределы блока */
+  z-index: 0; /* Убедимся, что изображения и заголовки не перекрывают друг друга */
+}
+
+
+.showcase .showcase-box .title {
+  position: absolute;
+  left: 0;
+  bottom: 28px;
+  background-color: navy; /* Можно заменить на ваш акцентный цвет */
+  border-radius: 0px 40px 40px 0px;
+  padding: 10px;
+  font-weight: 500;
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: capitalize;
+  color: #ffffff;
+  z-index: 10; /* Убедимся, что заголовок всегда поверх изображения */
+}
+
+
+@media (max-width: 1199px) {
+  .showcase .showcase-box {
+    flex: 1 1 48%; /* Для экранов от 992px до 1199px, показываем 2 фото на экране */
+  }
+}
+
+@media (max-width: 767px) {
+  .showcase .showcase-box {
+    flex: 1 1 95%; /* Для экранов меньших 768px, показываем 1 фото на экране */
+  }
+}
+
+.showcase .showcase-box:hover img {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+  z-index: 1; /* Увеличиваем слой изображения, чтобы оно выходило */
+}
+
+/*============== END SHOWCASE section ==========*/
+
 /* ============== Start Licenses & Certifications section ============== */
 
 .certifications {
@@ -846,7 +913,6 @@ img {
 /* ============== End Licenses & Certifications section ============== */
 
 
-
 /*============== start FAQ section ==========*/
 
 .faq .blury-1 {
@@ -876,6 +942,7 @@ img {
 }
 
 /*============== End FAQ section ==========*/
+
 
 
 /*============== Start contact section ==========*/

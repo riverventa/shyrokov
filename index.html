@@ -26,6 +26,12 @@
   <!-- main css file -->
   <link rel="stylesheet" href="css/styles.css">
   <title> Alexander Shyrokov | Personal Portfolio & CV</title>
+
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
+
 </head>
 
 <body class="body">
@@ -300,10 +306,6 @@
 
 
 
-
-
-
-
           <!-- ============== Education section ============== -->
 
           <section class="about position-relative pt-4  mt-4 " id="education">
@@ -445,9 +447,50 @@
                         </p>
                 
 
-                
-
             <!-- ============== END Professional Highlights section ============== -->
+
+            <!-- ============== SHOWCASE Area start ============== -->
+
+           <section class="showcase bg-gray p-100">
+            <div class="container">
+                <div class="heading">
+                    <h3>Delivering Success in Maritime Solutions</h3>
+                     
+                    <p class="body-2">We specialize in providing tailored maritime navigation solutions, 
+                      ensuring safer, more efficient<br>voyages by leveraging real-time weather data and 
+                      expert routing services. Our approach minimizes<br>risks, reduces costs, and 
+                      optimizes operational performance for ship operators worldwide</p>
+                </div>
+                <div class="showcase-slider">
+                    <div class="showcase-box">
+                        <img src="images\showcase\s-1.png" alt="">
+                        <h4 class="title">Real-Time Collaboration and Support</h4>
+                    </div>
+                    <div class="showcase-box">
+                        <img src="images\showcase\s-2.png" alt="">
+                        <h4 class="title">Optimized Routes and Performance</h4>
+                    </div>
+                    <div class="showcase-box">
+                        <img src="images\showcase\s-3.png" alt="">
+                        <h4 class="title">Innovative Weather Routing Solutions</h4>
+                    </div>
+                    <div class="showcase-box">
+                        <img src="images\showcase\s-4.png" alt="">
+                        <h4 class="title">Sustainable and Safe Navigation</h4>
+                    </div>
+                    <div class="showcase-box">
+                        <img src="images\showcase\s-5.png" alt="">
+                        <h4 class="title">Trusted Maritime Navigation Partner</h4>
+                    </div>
+                    <div class="showcase-box">
+                        <img src="images\showcase\s-6.png" alt="">
+                        <h4 class="title">Efficiency and Cost Savings</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============== showcase Area end ============== -->
 
           <!-- ============== Licenses & Certifications section ============== -->
 
@@ -507,6 +550,8 @@
         </div>
         
           <!-- ============== END Licenses & Certifications section ============== -->
+
+           
 
           <!-- ============== Hobbies & Interests section ============== -->
 
@@ -647,11 +692,11 @@
                   <div class="col-lg-6 col-12 pt-4">
                     <div class="d-flex flex-column gap-16">
                       <div class="d-flex justify-content-between">
-                        <h2 class="heading-3">Meteorological & Oceanographic Analysis</h2>
-                        <h2 class="heading-3">75%</h2>
+                        <h2 class="heading-3">Meteorological & Oceanographic </h2>
+                        <h2 class="heading-3">95%</h2>
                       </div>
                       <div class="progress">
-                        <div class="bar bar-5" style="width: 75%;"></div>
+                        <div class="bar bar-5" style="width: 95%;"></div>
                       </div>
                     </div>
                   </div>
@@ -780,18 +825,17 @@
                           <i class="fa-solid fa-phone primary-text icon-md"></i>
                           <h3 class="heading-3 m-0 p-0">+38 067 519 4912</h3>
                         </a>
+                        <div class="d-flex gap-16 align-items-center">
+                          <a href="https://wa.me/+380675194912" target="_blank">
+                            <i class="fa-brands fa-whatsapp primary-text icon-md"></i>
+                          </a>
+                          <a href="https://t.me/+380675194912" target="_blank">
+                            <i class="fa-brands fa-telegram primary-text icon-md"></i>
+                          </a>
+                        </div>
                       </div>
-                      <div class="d-flex gap-16 mt-2">
-                        <a href="https://wa.me/+380675194912" target="_blank">
-                          <i class="fa-brands fa-whatsapp primary-text icon-md"></i>
-                        </a>
-                        <a href="https://t.me/+380675194912" target="_blank">
-                          <i class="fa-brands fa-telegram primary-text icon-md"></i>
-                        </a>
-                      </div>
-                      <hr class="m-0 p-0">
                     </div>
-
+                    
                     <div class="contact-info">
                       <div class="contact-item">
                         <h3>
@@ -864,11 +908,11 @@
               </div>
             </div>
           </section>
-          <!-- ============== end footer section ========== -->
 
+         <!-- ============== end footer section ========== -->
 
-          <!--  JQuery file     -->
-          <script src="js/jquery-3.6.1.min.js"></script>
+          <!--  JQuery file (оставляем только один) -->
+          <script src="js/jquery-3.6.1.min.js"></script> <!-- или подключите через CDN, но не оба -->
 
           <!--  JQuery pace file     -->
           <script src="js/pace.js"></script>
@@ -885,8 +929,11 @@
           <!--  main js file  -->
           <script src="js/main.js"></script>
 
+          <!-- Подключаем Slick JS -->
+          <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-          
-        </body>
+          <!-- Подключаем ваш новый JS файл -->
+          <script src="js/showcase-slider.js"></script>
 
-        </html>
+</body>
+</html>
