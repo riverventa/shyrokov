@@ -1128,3 +1128,67 @@ h1.heading-1,
   z-index: 0;
   position: absolute;
 }
+
+
+
+/* Общий стиль для страницы thank-you-page *//* Общий стиль для страницы thank-you-page */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.thank-you-page {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+}
+
+.thank-you-page h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.thank-you-page p {
+  font-size: 18px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: #fff;
+  padding: 12px 25px;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+}
+
+/* Дополнительное стилизованное сообщение, если нужно */
+.thank-you-page .note {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #999;
+}
+/* END Общий стиль для страницы thank-you-page *//* END Общий стиль для страницы thank-you-page */
