@@ -796,7 +796,7 @@ img {
 .showcase .showcase-box img {
   width: 100%;
   height: auto;
-  border-radius: 0px;
+  border-radius: 10px;
   transition: all 0.3s ease;
 }
 
@@ -804,7 +804,7 @@ img {
 .showcase .showcase-box {
   position: relative; /* Обеспечиваем правильное позиционирование для title */
   margin-top: 20px;
-  margin-right: 10px; /* Отступ между изображениями */
+  margin-right: 15px; /* Отступ между изображениями */
   flex: 0 0 calc(25% - 10px); /* Для 4 изображений на экране */
   overflow: visible; /* Разрешаем выходить изображениям за пределы блока */
   z-index: 0; /* Убедимся, что изображения и заголовки не перекрывают друг друга */
@@ -814,7 +814,7 @@ img {
 .showcase .showcase-box .title {
   position: absolute;
   left: 0;
-  bottom: 28px;
+  bottom: 20px;
   background-color: navy; /* Можно заменить на ваш акцентный цвет */
   border-radius: 0px 40px 40px 0px;
   padding: 10px;
@@ -825,6 +825,10 @@ img {
   text-transform: capitalize;
   color: #ffffff;
   z-index: 10; /* Убедимся, что заголовок всегда поверх изображения */
+  /*border: 0px solid white;*/
+  box-shadow: 0 0 0 1px white;
+
+
 }
 
 
